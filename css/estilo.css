@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.header nav {
+    display: flex;
+}
+
+/* main */
+
+
+h1 {
+    font-family: "Krona One", sans-serif;
+    background-color: #c184c2;
+    color: #270b27;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.carousel-chico{
+    width: 500px;
+    margin: auto;
+}
+h2 {
+    font-family: "Oxygen", sans-serif;
+    background-color: #4c114d;
+    color: beige;
+    width: 580px;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+ul {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #c184c2;
+
+}
+
+li {
+    background-color: rgb(146, 25, 126);
+    display: inline;
+
+}
+
+a {
+    background-color: rgb(145, 38, 100);
+    color: whitesmoke;
+    padding: 10px;
+
+
+}
+
+/* selector de tipo de clase . */
+.nav {
+    background-color: #c184c2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 210px;
+    flex-wrap: wrap;
+
+
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav li {
+    margin: 0 3px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav img {
+    height: 200px;
+
+}
+
+.main-index {
+    background-color: #c79dae;
+
+}
+
+.main-index section {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*------Clase reutilizable ------*/
+.borde-blanco {
+    border: 2px solid white;
+}
+
+/* contacto formualrio */
+.formulario { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  label{
+    grid-column: 1;
+  }
+  input,textarea{
+    grid-column: 2;
+    width: 100%;
+  }
+  button{
+    grid-column: 1;
+  }
+  
+  .nombre { grid-area: 1 / 1 / 3 / 2; }
+  
+  .email { grid-area: 2 / 1 / 4 / 2; }
+  
+  .mensaje { grid-area: 3 / 1 / 4 / 2; }
+
+  /* media querys  mobile last*/
+  @media only screen and(max-width:600px)
+{
+    /* estilo para pantallas pequeñas */
+}
+@media only screen and(min-with:601px) and (max-midth:1024px){
+    /* estilo pantallas mediana */
+}
+@media only screen and (min-width:1025px){
+    /* estilo pantallas grandes */
+}
